@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Web</title>
+
+    <style>
+        body {
+            background-color: rgb(121, 121, 121);
+            font-weight: bold;
+        }
+
+        p {
+            text-align: right;
+            font-size: 40px;
+            margin-top: 0.60cm;
+            margin-right: 0.2cm;
+        }
+
+        .calculadora {
+            background-color: rgb(53, 53, 53);
+            border-top: 5px solid rgba(219, 219, 219, 0.452);
+            border-left: 5px solid rgba(219, 219, 219, 0.452);
+            height: 14cm;
+            width: 8cm;
+            margin-top: 1cm;
+            margin-left: 40%;
+            border-radius: 40px;
+            box-shadow: 10px 5px rgba(219, 219, 219, 0.452);
+        }
+
+        h1 {
+            text-align: center;
+            color: rgb(189, 123, 123);
+        }
+
+        .output {
+            background-color: rgb(121, 121, 121);
+            border: 1px solid rgb(0, 0, 0);
+            height: 2cm;
+            width: 7cm;
+            margin-left: 0.5cm;
+            margin-bottom: 1cm;
+            border-radius: 8px;
+        }
+
+        .interface button {
+            height: 1cm;
+            margin-bottom: 0.5cm;
+        }
+
+        .interface {
+            height: 6cm;
+            width: 7cm;
+            margin-left: 0.5cm;
+            display: flex;
+        }
+
+        .top {
+            margin-left: 0.75cm;
+            margin-bottom: 0.5cm;
+        }
+
+        button {
+            height: 1cm;
+            width: 1.5cm;
+            background-color: greenyellow;
+            color: rgb(65, 65, 65);
+            border-radius: 10px;
+            font-size: 20px;
+        }
+
+        button:hover {
+            background-color: rgb(243, 255, 225);
+        }
+        .voltar button{
+            margin-left:20%;
+            margin-bottom: 2cm;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="calculadora">
+
+        <h1>CALCULATOR</h1>
+
+        <div class="output">
+
+            <p id="saida"></p>
+
+        </div>
+
+        <div class="top">
+
+            <button id="x"><b>x</b></button>
+            <button id="c"><b>C</b></button>
+            <button id="ce"><b>CE</b></button>
+            <button id="b"><b>+/-</b></button>
+
+        </div>
+
+        <div class="interface">
+
+
+
+            <div class="left">
+
+                <button id="nove"><b>9</b></button>
+                <button id="oito"><b>8</b></button>
+                <button id="sete"><b>7</b></button>
+                <button id="seis"><b>6</b></button>
+                <button id="cinco"><b>5</b></button>
+                <button id="quatro"><b>4</b></button>
+                <button id="tres"><b>3</b></button>
+                <button id="dois"><b>2</b></button>
+                <button id="um"><b>1</b></button>
+                <button id="zero"><b>0</b></button>
+                <button id="ponto"><b>.</b></button>
+                <button id="igual"><b>=</b></button>
+
+            </div>
+
+            <div class="left">
+
+                <button id="dividir"><b>/</b></button>
+                <button id="multi"><b>*</b></button>
+                <button id="menos"><b>-</b></button>
+                <button id="mais"><b>+</b></button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="voltar">
+        <a href="../calculator/index.html"><button>Back</button></a>
+    </div>
+    <script src="../calculator/calculadora.js"></script>
+</body>
+
+</html>
